@@ -88,7 +88,7 @@ const Card = ({ poster_path, release_date, vote_average, title }) => {
   return (
     <div className="card">
       <div className="">
-        <img style={{ width: '100%' }} src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt="image" />
+        <img style={{ width: '100%', height: '15rem' }} src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt="image" />
       </div>
       <div className="body">
         <div className="rating">

@@ -29,7 +29,6 @@
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
 		rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 	/* border: 1px solid red; */
-	width: 10rem;
 	position: relative;
 	cursor: pointer;
 	transition: 0.3s all ease;
@@ -37,6 +36,10 @@
 
 .card:hover {
 	scale: 1.02;
+}
+
+.card img {
+	object-fit: cover;
 }
 
 .body {
