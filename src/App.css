@@ -1,0 +1,101 @@
+.main .title {
+	position: sticky;
+	top: 0;
+	color: white;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 10vh;
+	z-index: 99;
+}
+
+.container {
+	display: flex;
+	gap: 1rem;
+	padding: 2rem;
+	justify-content: center;
+}
+
+.d-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
+}
+
+.card {
+	border-radius: 0.3rem;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+		rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	/* border: 1px solid red; */
+	width: 10rem;
+	position: relative;
+	cursor: pointer;
+	transition: 0.3s all ease;
+}
+
+.card:hover {
+	scale: 1.02;
+}
+
+.body {
+	padding: 1rem 0.5rem 0.8rem;
+	background: white;
+}
+
+.rating {
+	position: absolute;
+	scale: 0.7;
+	width: 3rem;
+	height: 3rem;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	border: 3px solid green;
+	color: white;
+	background: rgb(29, 25, 41);
+	top: 65%;
+	left: 0;
+}
+
+.rating span {
+	font-size: 0.6rem;
+}
+
+.card .date {
+	font-size: 0.8rem;
+	opacity: 0.9;
+}
+
+.accordion-item {
+	width: 20vw;
+	border: 1px solid black;
+	border-radius: 0.3rem;
+	position: sticky;
+	top: 10vh;
+}
+
+.accordion-title {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+.accordion-content {
+	padding: 1rem;
+}
+
+.accordion-content p {
+	font-size: 0.9rem;
+	margin-top: 1rem;
+}
+
+.accordion-content select {
+	padding: 1rem 0;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 1rem;
+}
